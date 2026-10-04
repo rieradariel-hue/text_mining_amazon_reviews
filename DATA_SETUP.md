@@ -114,6 +114,8 @@ Den fullständiga datan finns också lokalt i:
 
 Den kan senare användas om vi vill köra en större/slutlig analys på all data.
 
+**Viktigt:** `rating` finns kvar i den nyskapade CSV-filen för kontroll och target-definition, men ska **inte** användas som input-feature till modellen, då `sentiment` är direkt härledd från `rating`. Annars får vi target leakage.
+
 6. Om något inte fungerar
 
 Kontrollera först att:

@@ -14,3 +14,7 @@ data/raw/*
 
 data/processed/*
 !data/processed/.gitkeep
+
+# Local models
+models/*
+!models/.gitkeep

@@ -19,7 +19,7 @@ Projektet är uppdelat i sex block:
 5. **Utvärdering och felanalys** – Vi analyserar modellernas resultat med bland annat confusion matrix och undersöker felklassificerade recensioner.
 6. **Prisanalys** – Vi undersöker hur sentiment och genomsnittliga betyg skiljer sig mellan olika prissegment.
 
-Block 4 och 5 finns i samma notebook.
+Del 4 och 5 finns i samma notebook.
 
 ## Projektstruktur
 

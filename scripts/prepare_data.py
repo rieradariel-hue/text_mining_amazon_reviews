@@ -65,6 +65,7 @@ def clean_reviews(reviews: pd.DataFrame) -> pd.DataFrame:
             "text",
             "asin",
             "parent_asin",
+            "timestamp",
             "sentiment",
         ]
     ].copy()
@@ -73,7 +74,10 @@ def clean_reviews(reviews: pd.DataFrame) -> pd.DataFrame:
 
 
 def create_development_sample(cleaned_reviews: pd.DataFrame) -> pd.DataFrame:
-    """Create reproducible sample while preserving sentiment distribution."""
+    """
+    Create reproducible sample while preserving sentiment distribution.
+    This is not the final train/test split used for model evaluation, but rather a smaller sample for development purposes.
+    """
     sample, _ = train_test_split(
         cleaned_reviews,
         train_size=SAMPLE_SIZE,
@@ -97,6 +101,7 @@ def main() -> None:
         "text",
         "asin",
         "parent_asin",
+        "timestamp",
         "sentiment",
     ]
 

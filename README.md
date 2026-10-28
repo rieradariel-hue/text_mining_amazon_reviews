@@ -1,12 +1,25 @@
 # Text Mining – Amazon Reviews
 
-Grupparbete – Fördjupning i Python
+Gruppmedlemmar - Dariel Riera Carrillo, Miralem Idriz, Mst Anarkoli, Rasmus Svensson, Salam Lababneh och Ummulbanin.
 
 ## Om projektet
 
 I det här grupparbetet analyserar vi produktrecensioner från Amazon inom kategorin All Beauty.
 
 Syftet är att använda textanalys och maskininlärning för att klassificera recensioner som positiva, negativa eller neutrala. Vi jämför två olika modeller och undersöker även om det finns något samband mellan produktpris och sentiment.
+
+## Tänkt användare
+
+Den tänkta användaren är exempelvis en produktansvarig
+eller dataanalytiker som vill få en snabb överblick över
+vad kunderna tycker om olika produkter.
+
+Med hjälp av sentimentanalysen kan användaren se om
+recensionerna är positiva, negativa eller neutrala
+utan att behöva läsa varje recension manuellt.
+
+Resultaten kan användas som stöd för att förstå
+kundernas upplevelser och förbättra produkter.
 
 ## Projektets delar
 
@@ -20,6 +33,17 @@ Projektet är uppdelat i sex block:
 6. **Prisanalys** – Vi undersöker hur sentiment och genomsnittliga betyg skiljer sig mellan olika prissegment.
 
 Del 4 och 5 finns i samma notebook.
+
+## Datakälla
+
+Vi använder datasetet Amazon Reviews 2023 från McAuley Lab,
+med fokus på kategorin All_Beauty.
+
+Datasetet innehåller kundrecensioner, stjärnbetyg och
+produktinformation som används för sentiment- och prisanalys.
+
+Datakällan finns här:
+https://amazon-reviews-2023.github.io/
 
 ## Projektstruktur
 
@@ -97,6 +121,24 @@ Vi jämförde sentiment mellan produkter i olika prissegment.
 
 Resultaten visar ett visst samband mellan pris och sentiment, men vi kan inte dra slutsatsen att ett högre pris orsakar mer positiva recensioner.
 
+## Begränsningar
+
+Projektet har några begränsningar:
+
+- Vi använde ett urval på 100 000 recensioner från
+  kategorin All_Beauty och inte hela Amazons dataset.
+
+- Sentimentklasserna baserades på stjärnbetygen.
+  Ett högt betyg behöver inte alltid betyda att
+  recensionstexten är positiv.
+
+- Modellerna hade svårast att klassificera neutrala
+  recensioner, vilket påverkade resultaten.
+
+- Prisanalysen visade ett visst samband mellan pris
+  och sentiment, men det betyder inte att högre
+  priser orsakar mer positiva recensioner.
+
 ## Sammanfattning
 
 Projektet visar hur textförbehandling och maskininlärning kan användas för att analysera kundrecensioner.
@@ -104,3 +146,29 @@ Projektet visar hur textförbehandling och maskininlärning kan användas för a
 Logistisk regression gav bäst resultat i modelljämförelsen, medan prisanalysen visade mindre skillnader i sentiment mellan olika prissegment.
 
 En viktig lärdom är att det inte räcker att enbart titta på accuracy. Vi behöver också undersöka vilka typer av recensioner modellerna har svårt att klassificera.
+
+## Användning av generativ AI
+
+Generativ AI har inte använts som en gemensam metod
+för gruppens analyser eller beslut.
+
+Eventuell individuell användning av AI som stöd för
+exempelvis kodförståelse och felsökning redovisas
+separat av respektive gruppmedlem.
+
+## Licens och användningsvillkor
+
+Projektet använder Amazon Reviews 2023 från McAuley Lab.
+
+Datasetet används i utbildningssyfte.
+Rådata och genererade CSV-filer laddas inte upp
+till GitHub.
+
+Datakälla:
+https://amazon-reviews-2023.github.io/
+
+För information om datasetets användningsvillkor,
+se den officiella källan.
+
+Ingen separat licens har valts för projektets kod.
+
